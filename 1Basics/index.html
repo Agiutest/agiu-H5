@@ -10,28 +10,81 @@
         }
       html{height:100%;}
       @keyframes myfirst {
-      	from {background:red;}
-      	to {background:green;}
+      	0% {background:red;left:0px;top:0px;}
+      	25% {background:yellow;left:0px;top;0px;}
+      	50% {background:blue;left:0px;top:0px;}
+      	75% {background:green;left:0px;top:0px;}
+      	100% {background:red;left:0px;top:0px}
+      	
       }
-       @keyframes sencond {
+       @keyframes mysencond {
       	from {opacity:0;}
       	to {opacity:100;}
       }
       h1{
-      	animation: myfirst 2s infinite;
+      	  font-family:Times New Roman;
+      	  font-weight:200;
+      	  font-variant:small-caps;
+      		font-size:50px;
+      		color:red;
+           width:100%;
+          text-align:center;
+      	animation: mysencond 2s infinite;
       }  
       p{
-      	animation: sencond 2s infinite;
+      	font-family:隶书;
+      	font-style:normal;
+      	animation: mysencond 2s infinite;
+      	font-size:2em;
+      	font-style="line-height:1.5;"
+      	position:relative;
+      }
+      #shenghuo{
+      	font-style:normal;
+      width:100%;
+      text-align:left;
+      	animation: mysencond 2s infinite;
+      }
+            #xuexi{
+            width:100%;
+      text-align:left;
+      	animation: mysencond 2s infinite;
+      }
+                  #lvyou{
+      width:100%;
+      text-align:left;
+      	animation: mysencond 2s infinite;
+      }           
+       #jiaren{
+      width:100%;
+      text-align:left;
+      	animation: mysencond 2s infinite;
+      }            
+      #pengyou{
+      width:100%;
+      text-align:left;
+      	animation: mysencond 2s infinite;
+      }
+            #airenu{
+      width:100%;
+      text-align:left;
+      	animation: mysencond 2s infinite;
+      }      #zuoping{
+      width:100%;
+      text-align:left;
+      	animation: mysencond 2s infinite;
       }
   </style>    
 </head>
 <body>
 <audio src="bgm/bgm3.3gp" controls="controls" autoplay="autoplay"></audio>
-<h1>分区</h1>
-<p>生活</p>
-<p>学习</p>
-<p>旅游</p>
-<p>家人</p>
-<p>朋友</p>
+<h1>Welcome To my life</h1>
+<p id="shenghuo">生活</p>
+<p id="xuexi">学习</p>
+<p id="lvyou">旅游</p>
+<p id="jiaren">家人</p>
+<p id="pengyou">朋友</p>
+<p id="airen">爱人</p>
+<p id="作品">作品</p>
     </body>
 </html>
