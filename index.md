@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Agiu home
 
 You can use the [editor on GitHub](https://github.com/Agiutest/agiu-H5/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
