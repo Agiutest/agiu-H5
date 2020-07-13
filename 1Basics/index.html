@@ -3,163 +3,264 @@
 <head>
 <title>我的主页</title>
   <style type="text/css">
-    body{
-      background-image:url(./image/20.jpg);
-      /*background-color:red*/
-      background-size:100% 100%;
+      /*background-image:url(./image/20.jpg);
+      /*background-color:red
+     background-size:100% 100%;
       height:100%;
       width:100%;
       margin:0;
       background-repeat:no-repeat;
       background-attachment:fixed;
-        }
+       top:0;
+       left:0;
+        }*/
+        
       html{height:100%;width:100%;
-      	 padding-top:1%;
-         padding-left:1%;
+      	 padding-top:0%;
+         padding-left:0%;
           margin:0;}
-      
-      @keyframes myfirst {
-      	0% {background:red;left:0px;top:0px;}
-      	25% {background:yellow;left:0px;top;0px;}
-      	50% {background:blue;left:0px;top:0px;}
-      	75% {background:green;left:0px;top:0px;}
-      	100% {background:red;left:0px;top:0px}
-      	
-      }
-       page{
-      	height:100%;
-      	width:100%;
-      	position:absolute;
-      	padding-top:30%;
-      	padding-left:-30%;
-      }
-       @keyframes mysencond {
-      	from {opacity:0;}
-      	to {opacity:100;}
-      }
-       @keyframes a {
-    	0% {opacity:0}
-    	25%{opacity:100}
-    	50%{opacity:0}
-      75%{opacity:0}
-      100%{opacity:0}
-      }
-       @keyframes b {
-    	0% {opacity:0}
-    	25%{opacity:0}
-    	50%{opacity:100}
-      75%{opacity:0}
-      100%{opacity:0}
-      }
-       @keyframes c {
-    	0% {opacity:0}
-    	25%{opacity:0}
-    	50%{opacity:0}
-      75%{opacity:100}
-      100%{opacity:0}
-      }
-       @keyframes d {
-    	0% {opacity:0}
-    	25%{opacity:0}
-    	50%{opacity:0}
-      75%{opacity:0}
-      100%{opacity:100}
-      }
-      h1{
-      	padding-top:1%;
-      	  font-family:Times New Roman;
-      	  font-weight:200;
-      	  font-variant:small-caps;
-      		font-size:50px;
-      		color:red;
-           width:100%;
-          text-align:center;
-      	animation: mysencond 2s infinite;
-      }  
-      p{
+      {
+            margin:0%;
+            padding:0;
+        }
+        #box{
+            width: 1200px;
+            height:460px;
+            margin: auto auto;
+            position: absolute;
+        }
+       .img{
+            width: 1200px;
+            height: 460px;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+          .img:nth-of-type(1){
+            background: url("./image/background/1.png");
+        }
+        .img:nth-of-type(2){
+            background: url("./image/background/2.png");
+        }
+        .img:nth-of-type(3){
+            background: url("./image/background/3.png");
+        }
+        .img:nth-of-type(4){
+            background: url("./image/background/4.png");
+        }
+        .jiantou1{
+            left: 242px;
+        }
+        .jiantou2{
+            right: 20px;
+        }
+        #box .cc{
+        	 display: inline-block;
+            width: 50px;
+            height: 200px;
+            line-height: 200px;
+            position: absolute;
+            top:130px;
+            background: rgba(0,0,0,0.3);
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+            color:#fff;
+        }
+      .div-dian{
+      	     display: inline-block;
+            width: 156px;
+            height: 32px;
+            position: absolute;
+            right:10px;
+            bottom: 10px;
+        }
+        .div-dian span{
+        	  display: inline-block;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            background: #fff;/*默认颜色*/
+        }
+        .div-dian .span-first{
+            background: springgreen;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .ul1{
+            width: 200px;
+            height:430px;
+            top:0;
+            left:0;
+            padding: 0 20px;
+            background: rgba(6,6,6,0.3);
+            opacity: 0.7;
+        }
+     .ul>li{
+            list-style: none;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px silver solid;
+            color:#EFEFEF;
+        }
+        .ul1>li{
+            list-style: none;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px silver solid;
+            color:#EFEFEF;
+        }
+        .div-center{
+            width: 500px;
+            height: 458px;
+            border: 1px solid #666666;
+            background: url("image/logo.png");
+            position: absolute;
+            left: 240px;
+            top:0;
+        }
+        .div-center{
+            display: none;
+        }
+        .div-center  .re{
+            color:red;
+            margin-left: 50px;
+        }
+       .div-center .ul2>li{
+            list-style: none;
+            width: 500px;
+            height: 50px;
+            line-height: 50px;
+            color:#000000;
+            margin-left: 50px;
+        }
+        .ul2>li .fl>a{
+            padding: 0 16px;
+            color:blue;
+            text-decoration: none;
+            list-style:none;
+            font-family:隶书;
+            font-size:2em;
+        }
+        p{
       	font-family:隶书;
       	font-style:normal;
-      	animation: mysencond 2s infinite;
       	font-size:2em;
-      	font-style="line-height:1.5"
+      	font-style="line-height:1"
       	position:relative;
+      	text-decoration: none;
       }
-      #shenghuo{
-      	font-style:normal;
-      width:100%;
-      text-align:left;
-      	animation: mysencond 2s infinite;
-      }
-            #xuexi{
-            width:100%;
-      text-align:left;
-      	animation: mysencond 2s infinite;
-      }
-                  #lvyou{
-      width:100%;
-      text-align:left;
-      	animation: mysencond 2s infinite;
-      }           
-       #jiaren{
-      width:100%;
-      text-align:left;
-      	animation: mysencond 2s infinite;
-      }            
-      #pengyou{
-      width:100%;
-      text-align:left;
-      	animation: mysencond 2s infinite;
-      }
-            #airenu{
-      width:100%;
-      text-align:left;
-      	animation: mysencond 2s infinite;
-      }      #zuoping{
-      width:100%;
-      text-align:left;
-      	animation: mysencond 2s infinite;
-      } 
-      #z{display:block}
-      /*#a{
-    	background-image:url(./image/family/12家人.jpg);
-    	background-size:100% 100%;
-    	animation:a 20s 
-    
-    }
-     #b{
-    	background-image:url(./image/family/13家人.jpg);
-    	background-size:100% 100%;
-    	animation:b 20s
-    }
-     #c{
-    	background-image:url(./image/family/14家人.jpg);
-    	background-size:100% 100%;
-    	animation:c 20s
-    }
-     #d{
-    	background-image:url(./image/family/15家人.jpg);
-    	background-size:100% 100%;
-    	animation:d 20s
-    }*/
-  </style>    
+      a{ text-decoration:none;} 
+      a:hover{ background:#00F; color:#FFF }
+    </style>
 </head>
 <body>
-<audio src="bgm/bgm3.3gp" controls="controls" autoplay="autoplay"></audio>
-<h1>Welcome To my life</h1>
-<p id="shenghuo">生活</p>
-<p id="xuexi">学习</p>
-<p id="lvyou">旅游</p>
-<p id="jiaren">家人</p>
-<a href="family.html" target="_blank">帝王之家</a>
-<p id="pengyou">朋友</p>
-<p id="airen">爱人</p>
-<p id="作品">作品</p>
-<a href="picturelink.html"target="_blank">PS作品</a>
-<a href="video.html"target="_blank">AE&AR作品</a>
- <page id ="a"></page>
-<page id ="b"></page>
-<page id ="c"></page>
-<page id ="d"></page>
-<page id ="e"></page>
-    </body>
+	<audio src="bgm/bgm3.3gp" controls="controls" autoplay="autoplay"></audio>
+<div id="box">
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="jiantou jiantou1 cc">&gt;</div>
+    <div class="jiantou jiantou2 cc">&lt;</div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="ul1">
+        <li class="lis">
+               <span><a href="" target="_blank">生活</a></span>
+        </li>
+         <li class="lis">
+                <span><a href="family.html" target="_blank">家人</a></span>
+        </li>
+        <li class="lis">
+               <span><a href="" target="_blank">旅游</a></span>
+        </li>
+        <li class="lis">
+            <span><a href="picturelink.html" target="_blank">图片</a></span>
+         <li class="lis">
+            <span><a href=""target="_blank">视频</a></span>
+        </li>
+            <span><a href=" "target="_blank">友情爱情</a></span>
+        </li>
+       
+    </ul>
+<script>
+
+    var jiantou=document.getElementsByClassName("jiantou");
+    var imgs=document.getElementsByClassName("img");//图片
+    var box=document.getElementById("box");//大盒子
+    var spa=document.getElementsByTagName("span");//点
+    var index =0;//默认第一张
+    //单击事件-->箭头轮播
+    jiantou[1].onclick=function() {
+        lb(true)
+    };
+    //单击事件<--箭头轮播
+    jiantou[0].onclick=function() {
+        lb(false)
+    };
+    //鼠标移入大盒子 停止轮播
+    box.onmouseover=function() {
+        clearInterval(timer)
+    };
+    //鼠标移出大盒子 继续轮播
+    box.onmouseout=function() {
+        timer=setInterval(function() {lb(true)},1000);
+    };
+
+    //间歇调用  (用匿名函数--传参)
+    var timer=setInterval(function() {lb(true)},1000);
+    //函数封装
+    function lb(n) {//n为开关进行判断真true或假false
+        if(n){//++
+            index++;//递增(往前)
+            if(index>3){//当下标大于2时
+                index=0;//默认图片
+            }
+        }else{//--
+            index--;//递减(倒退)
+            if(index<0){//当下标小于0时,执行index=2
+                index=3;//默认最后图片
+                //console.log(index=3)
+            }
+        }
+        //循环遍历   （以下公共部分--jiantou）
+        for(var i=0;i<imgs.length;i++){
+            imgs[i].style.display="none";//全部隐藏
+            spa[i].className="";//空
+        }
+        imgs[index].style.display="block";//默认当前第一张显示
+        spa[index].className="span-first";//默认选中
+    }
+    //点击某一种项进行跳转某图片
+    for(var i=0;i<spa.length;i++){//点
+        spa[i].index=i;//获取所有的下标
+        spa[i].onclick=function() {//单击点
+            //循环遍历
+            for(var i=0;i<imgs.length;i++){
+                imgs[i].style.display="none";//全部隐藏
+                spa[i].className="";//空
+            }//this.index:代表点击的某一项下标.
+            imgs[this.index].style.display="block";//默认当前第一张显示
+            spa[this.index].className="span-first";//默认选中
+            index=this.index;//下标改成当前的下标 //随机选中的一项
+        }
+    }
+</script>
+ </style>    
+</head>
 </html>
